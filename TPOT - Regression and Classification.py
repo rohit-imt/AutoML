@@ -1,21 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
+# Install Libraries
+#!pip install tpot 
 
-# # TPOT Examples
+# Classification Example
 
-# ## Classification
-
-# In[1]:
-
-
-# Install packages
-get_ipython().system('pip install tpot')
-
-
-# ### Below is a minimal working example with the optical recognition of handwritten digits dataset.
-
-# In[2]:
-
+# Below is a minimal working example with the optical recognition of handwritten digits dataset.
 
 from tpot import TPOTClassifier
 from sklearn.datasets import load_digits
@@ -31,11 +19,7 @@ print(tpot.score(X_test, y_test))
 tpot.export('tpot_digits_pipeline.py')
 
 
-# ## Regression
-
-# ### Similarly, TPOT can optimize pipelines for regression problems. Below is a minimal working example with the practice Boston housing prices data set.
-
-# In[4]:
+# Regression Example
 
 
 from tpot import TPOTRegressor
